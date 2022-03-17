@@ -8,6 +8,9 @@ jobs:
       - image: cimg/ruby:3.1-node
     steps:
       - checkout
+      - run: gem install bundler
+      - run: bundle install
+      - run: bundle exec rspec
       - ruby/install-deps
       - ruby/rspec-test
 
