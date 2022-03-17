@@ -7,4 +7,4 @@ module MyApp
       "Hello world!"
     end
   end
-end 
+end
