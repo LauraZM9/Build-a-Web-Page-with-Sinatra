@@ -32,9 +32,9 @@ jobs:
 
       - run: |
           if [[ $(cat my_workspace/echo-output) == "Trying out workspaces" ]]; then
-            echo "It worked!"; exit 1
+            echo "It worked!";
           else
-            echo "Nope!"; 
+            echo "Nope!"; exit 1
           fi
 workflows:
   version: 2
